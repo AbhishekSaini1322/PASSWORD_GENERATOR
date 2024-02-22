@@ -1,2 +1,2 @@
 # PASSWORD_GENERATOR
-"This is First Clone Projecy"
+"This is First Clone Project"
