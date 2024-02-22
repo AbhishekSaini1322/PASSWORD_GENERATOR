@@ -6,8 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        dddf
+    <div class="container">
+
+       <h1>Password Generator</h1>
+
+       <div class="display-container">
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+
+            <button data-copy>
+                <span data-copyMsg></span>
+                <img src="./assest/copy.svg" alt="copy" width="23" height="23">
+            </button>
+
+       </div>
+
+       <div class="input-container">
+         <div class="length-container">
+            <p>Password Lemgth</p>
+            <p data-lengthNumber>0</p>
+         </div>
+         <!-- ----------slider --------------- -->
+         <input type="range" min="1" max="20" step="1" data-lengthSlider>
+
+         <!-- ------------check box -------------- -->
+            <div>
+               <input type="checkbox" id="uppercase">
+               <label for="uppercase">Includes Uppercase Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes numbers Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes Symbols</label>
+            </div>
+
+            <!-------- strength =------------------ -->
+             <div class="strength-container">
+                <p>Strength</p>
+                <div data-indicator></div>
+             </div>
+
+             <!-- generator password button  -->
+             <button class="generateBtn">Generator Password</button>
+
+       </div>
+
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
